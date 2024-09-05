@@ -44,11 +44,9 @@ header ,footer ,.lblue:hover{
     height: 250px;
 }
 .icon{
-    position: fixed;
-    z-index: 10;
-    font-size: 45px;
+     z-index: 10;
     top: 50%;
-    left: 90%;
+    left: 93%;
     transform: translate(-50%,-50%);
 }
 .hov{
