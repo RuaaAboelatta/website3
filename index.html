@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+       
+        <header class= "fixed-top">
+            <nav class="nav navbar-expand-md">
+                <img src="img/logo.png" alt="" class="navbar-brand " width="100px">
+                <h2 class="navbar-brand text-light mt-2">Art Gallery</h2>
+                <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-bars text-light bar"></i>
+                    </span>
+                </button>
+                <div class="container-fluid row collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        
+                        <li class="nav-item ml-3"><a href="#" class="nav-link text-light">Home</a></li>
+                        <li class="nav-item ml-3"><a href="#" class="nav-link text-light mr-2">Link</a></li>
+                        <div class="nav-item dropdown mt-1">
+                            <button class=" btn bg-light dropdown-toggle ml-3 px-2 py-1" data-toggle="dropdown">Category</button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Modern Art</a>
+                                <a href="#" class="dropdown-item">Medieval Art</a>
+                                <a href="#" class="dropdown-item">Athor</a>
+                            </div><!-- dropdown-menu -->
+                        </div><!-- nav-item -->
+                        <li class="nav-item ml-3"><a href="#" class="nav-link text-light">About</a></li>
+                    </ul>
+                    <form action="#" class="form-inline ml-auto">
+                        <input type="text" class="form-control mr-2" placeholder="Search">
+                        <button class="btn btn-light m-2">Search</button>
+                        <button class="btn text-light m-2 lblue" data-toggle="modal" data-target="#loginpage">Login</button>
+                    </form>
+                </div><!-- container-fluid -->
+            </nav>
+            <div class="modal fade" id="loginpage">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title">
+                                <h2 class="display-4">Login Page</h2>
+                            </div><!-- modal-title -->
+                            <button class="close" data-dismiss="modal"> &times; </button>
+                        </div><!-- modal-header -->
+                        <div class="modal-body">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="email">Enter your email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div><!-- form-group -->
+                                <div class="form-group">
+                                    <label for="pass">Enter your password</label>
+                                    <input type="password" class="form-control" id="pass">
+                                </div><!-- form-group -->
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="rem">
+                                    <label for="rem" class="custom-control-label">Remember me</label>
+                                </div><!-- custom-control -->
+                            </form>
+                        </div><!-- modal-body -->
+                        <div class="modal-footer">
+                            <button class="btn border">Login</button>
+                            <button class="btn text-light lblue" data-dismiss="modal">Close</button>
+                        </div><!-- modal-footer -->
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+        </header>
+        <main>
+            <div class="carousel slide pt-5" id="bg" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#bg" data-slide-to="0" class="active"></li>
+                    <li data-target="#bg" data-slide-to="1" ></li>
+                    <li data-target="#bg" data-slide-to="2" ></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/bg1.jpeg" alt="" width="100%" height="600px">
+                        <div class="carousel-caption">
+                            <h2>National Museum</h2>
+                            <p>Explore art and artists</p>
+                            <button class="btn bg-light">book your ticket</button>
+                        </div><!-- carousel-caption -->
+                    </div><!-- carousel-item -->
+                    <div class="carousel-item">
+                        <img src="img/bg2.jpeg" alt="" width="100%" height="600px">
+                        <div class="carousel-caption">
+                            <h2>National Museum</h2>
+                            <p>Explore art and artists</p>
+                            <button class="btn bg-light">book your ticket</button>
+                        </div><!-- carousel-caption -->
+                    </div><!-- carousel-item -->
+                    <div class="carousel-item">
+                        <img src="img/bg3.jpeg" alt="" width="100%" height="600px">
+                        <div class="carousel-caption">
+                            <h2>National Museum</h2>
+                            <p>Explore art and artists</p>
+                            <button class="btn bg-light">book your ticket</button>
+                        </div><!-- carousel-caption -->
+                    </div><!-- carousel-item -->
+                </div><!-- carousel-inner -->
+                <a href="#bg" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#bg" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="#" class="smedia "><i class="fa-brands fa-facebook d-block m-4"></i></a>
+                <a href="#" class="smedia "><i class="fa-brands fa-whatsapp d-block m-4"></i></a>
+                <a href="#" class="smedia "><i class="fa-brands fa-twitter d-block m-4"></i></a>
+                <a href="#" class="smedia "><i class="fa-brands fa-linkedin d-block m-4"></i></a>
+                <a href="#" class="smedia "><i class="fa-brands fa-instagram d-block m-4"></i></a>
+            </div><!-- icon -->
+        </main>
+        <section>
+            <div class="jumbotron-fluid p-3 lgrey">
+                <h2 class="display-4">Welcome</h2>
+                <p> Art museums are cultural institutions that display and preserve artworks, offering insight into various artistic styles and histories. They provide educational experiences and often host special exhibitions and events. These museums inspire creativity and deepen appreciation for the arts.</p>
+                <button class="btn btn-light">Learn more</button>
+            </div><!-- jumbotron-fluid -->
+        </section>
+        <section class="p-3">
+            <div class="jumbotron-fluid">
+                <h2 class="display-3 title">Art Gallery</h2>
+            </div><!-- jumbotron-fluid -->
+        </section>
+        <section>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#item1" class="card-link" data-toggle="collapse">Modern Art</a>
+                    </div><!-- card-header -->
+                    <div id="item1" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Modern art refers to artistic works produced roughly from the late 19th century to the mid-20th century, characterized by a break from traditional styles and techniques. It embraces experimentation, abstraction, and new perspectives, reflecting the rapidly changing world of that era. Modern art often challenges conventional ideas, exploring themes like identity, technology, and the human experience.</p>
+                        </div><!--card-body  -->
+                    </div><!-- item1 -->
+                </div><!-- card -->
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#item2" class="card-link" data-toggle="collapse">Medieval Art</a>
+                    </div><!-- card-header -->
+                    <div id="item2" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Medieval art encompasses the artistic expression from the 5th to the 15th century, primarily in Europe, characterized by religious themes and a focus on symbolism. It includes a variety of forms, such as illuminated manuscripts, frescoes, stained glass, and sculptures, often used to convey spiritual messages and decorate churches. The style is marked by a lack of perspective, with figures often appearing flat and stylized rather than realistic.</p>
+                        </div><!--card-body  -->
+                    </div><!-- item2 -->
+                </div><!-- card -->
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#item3" class="card-link" data-toggle="collapse">Impressionism</a>
+                    </div><!-- card-header -->
+                    <div id="item3" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Impressionism is an art movement that emerged in the late 19th century, characterized by its focus on capturing the effects of light and atmosphere in the moment. Artists used loose brushwork, vibrant colors, and often painted en plein air (outdoors) to depict scenes of everyday life, landscapes, and urban settings. Instead of striving for detailed realism, Impressionists aimed to convey the sensory experience of a scene, leading to a more spontaneous and dynamic style.</p>
+                        </div><!--card-body  -->
+                    </div><!-- item3 -->
+                </div><!-- card -->
+            </div><!-- accordion -->
+        </section>
+        <section >
+            <div class="jumbotron-fluid p-2 lgrey">
+                <h2 class="display-3 title">Modern Art</h2>
+            </div>
+            <div class="container-fluid p-4">
+                <div class="form-group">
+                    <h2>Find the art piece by description</h2>
+                    <button class="btn mb-2 text-light lblue sbtn" data-toggle="tooltip" data-placement="right" title="search">search</button>
+                    <textarea class="form-control" rows="4"  placeholder="description"></textarea>
+                </div><!-- form-group -->
+            </div><!-- container-fluid -->
+        </section>
+        <section >
+            <div class="jumbotron-fluid p-2 lgrey">
+                <h2 class="display-3 title">Medieval Art</h2>
+            </div>
+            <div class="container-fluid p-4">
+                <div class="form-group">
+                    <h2>Find the art piece by description</h2>
+                    <button class="btn mb-2 text-light lblue sbtn" data-toggle="tooltip" data-placement="right" title="search">search</button>
+                    <textarea class="form-control" rows="4"  placeholder="description"></textarea>
+                </div><!-- form-group -->
+            </div><!-- container-fluid -->
+        </section>
+        <section>
+            <div class="jumbotron-fluid p-2 lgrey">
+                <h2 class="display-3 title">Impressionism Art</h2>
+            </div>
+            <div class="container-fluid p-4">
+                <div class="form-group">
+                    <h2>Find the art piece by description</h2>
+                    <button class="btn mb-2 text-light lblue sbtn" data-toggle="tooltip" data-placement="right" title="search">search</button>
+                    <textarea class="form-control" rows="4"  placeholder="description"></textarea>
+                </div><!-- form-group -->
+            </div><!-- container-fluid -->
+        </section>
+        <section class="sec1"></section>
+        <section>
+            <div class="container d-flex justify-content-between flex-wrap my-4">
+                <div class="card col-xl-3  col-sm-12 my-2 shadow hov">
+                    <img src="img/img1.jpeg" alt="" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="d-inline">Art</h2>
+                        <button class="btn float-right text-light lblue">know more</button>
+                        <p class="my-2">Van Gough unique colorful collection  </p>
+                    </div><!-- card-body -->
+                </div><!-- card -->
+                <div class="card col-xl-3  col-sm-12 my-2 shadow  hov">
+                    <img src="img/img2.jpeg" alt="" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="d-inline">Art</h2>
+                        <button class="btn float-right text-light lblue">know more</button>
+                        <p class="my-2">Van Gough unique colorful collection  </p>
+                    </div><!-- card-body -->
+                </div><!-- card -->
+                <div class="card col-xl-3  col-sm-12 my-2 shadow  hov">
+                    <img src="img/img3.jpeg" alt="" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="d-inline">Art</h2>
+                        <button class="btn float-right text-light lblue">know more</button>
+                        <p class="my-2">Van Gough unique colorful collection  </p>
+                    </div><!-- card-body -->
+                </div><!-- card -->
+            </div><!-- container -->
+            <div class="container d-flex justify-content-between flex-wrap my-4">
+                <div class="card col-xl-3  col-sm-12 my-2 shadow  hov">
+                    <img src="img/img4.jpeg" alt="" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="d-inline">Art</h2>
+                        <button class="btn float-right text-light lblue">know more</button>
+                        <p class="my-2">Claude Monet special collection </p>
+                    </div><!-- card-body -->
+                </div><!-- card -->
+                <div class="card col-xl-3  col-sm-12 my-2 shadow  hov">
+                    <img src="img/img5.jpeg" alt="" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="d-inline">Art</h2>
+                        <button class="btn float-right text-light lblue">know more</button>
+                        <p class="my-2">Claude Monet special collection </p>
+                    </div><!-- card-body -->
+                </div><!-- card -->
+                <div class="card col-xl-3  col-sm-12 my-2 shadow  hov">
+                    <img src="img/img6.jpeg" alt="" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="d-inline">Art</h2>
+                        <button class="btn float-right text-light lblue">know more</button>
+                        <p class="my-2">Claude Monet special collection </p>
+                    </div><!-- card-body -->
+                </div><!-- card -->
+            </div><!-- container -->
+            <div class="container d-flex justify-content-around flex-wrap my-4">
+                <div class="card col-xl-3  col-sm-12 my-2 shadow  hov">
+                    <img src="img/img7.jpeg" alt="" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="d-inline">Art</h2>
+                        <button class="btn float-right text-light lblue">know more</button>
+                        <p class="my-2">special floral collection </p>
+                    </div><!-- card-body -->
+                </div><!-- card -->
+                <div class="card col-xl-3  col-sm-12 my-2 shadow  hov">
+                    <img src="img/img8.jpeg" alt="" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="d-inline">Art</h2>
+                        <button class="btn float-right text-light lblue">know more</button>
+                        <p class="my-2">special floral collection </p>
+                    </div><!-- card-body -->
+                </div><!-- card -->
+            </div><!-- container -->
+        </section>
+        <section class="sec2"></section>
+        <section>
+            <div class="jumbotron">
+                <h2 class="display-3 title">Famous Artists</h2>
+            </div><!-- jumbotron -->
+        </section>
+        <section>
+            <div class="container d-flex justify-content-between flex-wrap">
+                <div class="card col-xl-3 col-sm-12 p-0 my-2  shadow art-card"  >
+                    <img src="img/b1.jpeg" alt="" class="card-img" height="100%" >
+                    <div class="card-img-overlay d-flex flex-column ">
+                        <div>
+                            <h2 class="text-light">Starry Night </h2>
+                            <div class="text-light">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>1889</span>
+                            </div>
+                        </div>
+                        <div class="mt-auto">
+                            <img src="img/ar1.jpeg" alt="" class="rounded-circle" height="150px">
+                            <p class="text-light">Van Gough</p>
+                        </div>
+                    </div><!--card-img-overlay  -->
+                </div> <!-- card --> 
+                <div class="card col-xl-3 col-sm-12 p-0 my-2 shadow art-card" >
+                    <img src="img/b2.jpeg" alt="" class="card-img-top"height="100%">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <div>
+                            <h2 class="text-light">Water Lilies </h2>
+                            <div class="text-light">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>1919</span>
+                            </div>
+                        </div>
+                        <div class="mt-auto">
+                            <img src="img/ar2.jpeg" alt="" class="rounded-circle " height="150px">
+                            <p class="text-light">Claude Monet</p>
+                        </div>
+                    </div><!--card-img-overlay  -->
+                </div> <!-- card --> 
+                <div class="card col-xl-3 col-sm-12 p-0 my-2 shadow art-card">
+                    <img src="img/b3.jpeg" alt="" class="card-img-top" height="100%">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <div>
+                            <h2 class="text-light">Adele-Bauer</h2>
+                            <div class="text-light">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>1907</span>
+                            </div>
+                        </div>
+                        <div class="mt-auto">
+                            <img src="img/ar3.jpeg" alt="" class="rounded-circle" height="150px">
+                            <p class="text-light">Gustav Climt</p>
+                        </div>
+                    </div><!-- card-img-overlay -->
+                </div><!-- card --> 
+            </div><!-- container -->
+        </section>
+        <section>
+            <h2 class="dislay-3 title mt-4">Our Podcasts</h2>
+            <div class="container media border shadow my-5">
+                <div class="media-body pt-4">
+                    <h2>Animals in art</h2>
+                    <p>Animals in art have been depicted throughout history, symbolizing various cultural, religious, and personal meanings. From ancient cave paintings to modern works, artists have used animals to convey themes like power, spirituality, and the natural world. Whether portrayed realistically or symbolically, animals often serve as metaphors, representing human emotions, virtues, or the relationship between humans and nature.</p>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-tag"></i>
+                        podcast
+                    </button>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-clock"></i>
+                        30 min
+                    </button>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-play"></i>
+                        play
+                    </button>
+                </div><!--media-body  -->
+                <img src="img/img9.jpg" alt="" height="300px" >
+            </div><!--container  -->
+            <div class="container media border shadow my-5">
+                <img src="img/img10.jpg" alt="" class="mr-3" height="300px">
+                <div class="media-body pt-4">
+                    <h2>Simple portraits</h2>
+                    <p>Portraits in art capture the likeness and essence of a person, often reflecting their personality, status, or emotions. Throughout history, portraits have served as a way to commemorate individuals, from royalty and leaders to ordinary people. Artists use various techniques, such as composition, color, and expression, to convey the subject's character and create a lasting representation of their identity.</p>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-tag"></i>
+                        podcast
+                    </button>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-clock"></i>
+                        30 min
+                    </button>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-play"></i>
+                        play
+                    </button>
+                </div><!--media-body -->
+            </div><!-- container -->
+            <div class="container media border shadow my-5">
+                <div class="media-body pt-4">
+                    <h2>Culture in art</h2>
+                    <p>Culture in art reflects the values, beliefs, and traditions of a society, shaping and being shaped by the artistic expressions within it. Art serves as a medium for cultural storytelling, preserving history, rituals, and social norms through visual forms. Different cultures bring unique styles, symbols, and techniques to art, creating a rich tapestry that highlights the diversity of human experience across time and geography.</p>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-tag"></i>
+                        podcast
+                    </button>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-clock"></i>
+                        30 min
+                    </button>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-play"></i>
+                        play
+                    </button>
+                </div><!-- media-body -->
+                <img src="img/img11.jpg" alt="" height="300px">
+            </div><!--container  -->
+            <div class="container media border shadow my-5">
+                <img src="img/img12.jpg" alt="" class="mr-3" height="300px">
+                <div class="media-body pt-4">
+                    <h2>The most famous faces</h2>
+                    <p>The Mona Lisa, painted by Leonardo da Vinci in the early 16th century, is one of the most famous and enigmatic portraits in art history. This Renaissance masterpiece is renowned for the subject's mysterious smile, subtle expression, and the use of sfumato, a technique that creates a soft, blurred transition between colors and tones. Housed in the Louvre Museum in Paris, the Mona Lisa continues to captivate millions of viewers with its intriguing aura and artistic mastery.</p>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-tag"></i>
+                        podcast
+                    </button>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-clock"></i>
+                        30 min
+                    </button>
+                    <button class="btn m-2 text-light lblue">
+                        <i class="fa-solid fa-play"></i>
+                        play
+                    </button>
+                </div><!-- media-body -->
+            </div><!--container  -->
+        </section>
+        <section>
+            <div class="container d-flex justify-content-between flex-wrap py-5">
+                <div class="border col-xl-2 col-sm-8 shadow my-2 box">
+                    <h2>like</h2>
+                    <a href="#" class="smedia"><i class="fa-brands fa-twitter display-2 m-auto"></i></a>
+                    <h2>follow</h2>
+                </div><!-- border -->
+                <div class="border col-xl-2 col-sm-8 shadow  my-2 box">
+                    <h2>like</h2>
+                    <a href="#" class="smedia"><i class="fa-brands fa-whatsapp display-2 m-auto"></i></a>
+                    <h2>follow</h2>
+                </div><!-- border -->
+                <div class="border col-xl-2 col-sm-8 shadow  my-2 box">
+                    <h2>like</h2>
+                    <a href="#" class="smedia"><i class="fa-brands fa-linkedin display-2 m-auto"></i></a>
+                    <h2>follow</h2>
+                </div><!-- border -->
+                <div class="border col-xl-2 col-sm-8 shadow  my-2 box">
+                    <h2>like</h2>
+                    <a href="#" class="smedia"><i class="fa-brands fa-instagram display-2 m-auto"></i></a>
+                    <h2>follow</h2>
+                </div><!-- border -->
+            </div><!-- container -->
+        </section>
+        <footer class="container-fluid text-light ">
+            <div>
+                <div class="d-flex justify-content-around flex-wrap">
+                    <div class="col-xl-3 col-sm-10 foot">
+                        <div class="line bg-light w-100 my-2"></div>
+                        <img src="img/logo.png" alt="" width="70px">
+                        <span>About us</span>
+                        <div class="line bg-light w-100 my-2"></div>
+                        <p>The foundation</p>
+                        <p>our team</p>
+                        <p>Goals</p>
+                    </div>
+                    <div class="col-xl-3 col-sm-10 foot">
+                        <div class="line bg-light w-100 my-2"></div>
+                        <img src="img/logo.png" alt=""  width="70px">
+                        <span>Important Links</span>
+                        <div class="line bg-light w-100 my-2 mb-4"></div>
+                        <a href="#" class="d-block text-light my-2">Our Location</a>
+                        <a href="#" class="d-block text-light my-2">Contacts</a>
+                        <a href="#" class="d-block text-light my-2">Help</a>
+                    </div>
+                    <div class="col-xl-3 col-sm-10 foot">
+                        <div class="line bg-light w-100 my-2"></div>
+                        <img src="img/logo.png" alt="" width="70px">
+                        <span>Services</span>
+                        <div class="line bg-light w-100 my-2"></div>
+                        <p>Booking tickets</p>
+                        <p>Art Prints</p>
+                        <p>Podcasts</p>
+                    </div>
+                </div>
+                <div class="line bg-light w-100 my-2"></div>
+            </div>
+            <p class="title">copyright &copy; 2024 all rights are preserved</p>
+        </footer>
+        <script src="js/javascript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
+    </body>
+</html>

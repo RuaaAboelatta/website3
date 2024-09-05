@@ -1,0 +1,74 @@
+*{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+ }
+.lblue{
+    background-color: #1F2C7E;
+}
+.lgrey{
+    background-color: #BCC8D4;
+}
+header ,footer ,.lblue:hover{
+    background-color: #030741;
+}
+.bar{
+    font-size: larger;
+}
+.modal-backdrop{
+    z-index: -1;
+}
+.smedia{
+    color: #030741;
+}
+.smedia:hover{
+    text-decoration: none;
+}
+.title ,.box ,.foot{
+    text-align: center;
+    margin: auto;
+}
+.carousel-caption{
+    background-color: rgba(3, 11, 58, 0.5);
+}
+.media:hover img{
+    transform: scale(1.1,1.1);
+    transition: 1s;
+}
+.art-card:hover{
+    transform: scale(0.9,0.9);
+    transition: 1s;
+}
+.sec1 ,.sec2{
+    background-image: url(../img/bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 250px;
+}
+.icon{
+    position: fixed;
+    z-index: 1;
+    font-size: 45px;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%,-50%);
+}
+.hov{
+    position: relative;
+}
+.hov ::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 0%;
+}
+.hov:hover ::after{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+.line{
+    height: 2px;
+}
