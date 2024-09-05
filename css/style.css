@@ -44,10 +44,15 @@ header ,footer ,.lblue:hover{
     height: 250px;
 }
 .icon{
-     z-index: 10;
+    position: fixed;
+    z-index: 10;
     top: 50%;
-    left: 93%;
-    transform: translate(-50%,-50%);
+    right: 20px;
+    transform: translatey(-50%); 
+}
+.smedia i{
+    text-align: right;
+    font-size: 45px;
 }
 .hov{
     position: relative;
