@@ -45,7 +45,7 @@ header ,footer ,.lblue:hover{
 }
 .icon{
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     font-size: 45px;
     top: 50%;
     left: 90%;
