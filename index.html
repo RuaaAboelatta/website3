@@ -11,36 +11,38 @@
     <body>
        
         <header class= "fixed-top">
-            <nav class="nav navbar-expand-md">
-                <img src="img/logo.png" alt="" class="navbar-brand " width="100px">
-                <h2 class="navbar-brand text-light mt-2">Art Gallery</h2>
-                <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon">
-                        <i class="fa-solid fa-bars text-light bar"></i>
-                    </span>
-                </button>
-                <div class="container-fluid row collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        
-                        <li class="nav-item ml-3"><a href="#" class="nav-link text-light">Home</a></li>
-                        <li class="nav-item ml-3"><a href="#" class="nav-link text-light mr-2">Link</a></li>
-                        <div class="nav-item dropdown mt-1">
-                            <button class=" btn bg-light dropdown-toggle ml-3 px-2 py-1" data-toggle="dropdown">Category</button>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Modern Art</a>
-                                <a href="#" class="dropdown-item">Medieval Art</a>
-                                <a href="#" class="dropdown-item">Athor</a>
-                            </div><!-- dropdown-menu -->
-                        </div><!-- nav-item -->
-                        <li class="nav-item ml-3"><a href="#" class="nav-link text-light">About</a></li>
-                    </ul>
-                    <form action="#" class="form-inline ml-auto">
-                        <input type="text" class="form-control mr-2" placeholder="Search">
-                        <button class="btn btn-light m-2">Search</button>
-                        <button class="btn text-light m-2 lblue" data-toggle="modal" data-target="#loginpage">Login</button>
-                    </form>
-                </div><!-- container-fluid -->
-            </nav>
+            <div class="container-fluid">
+                <nav class="nav navbar-expand-md">
+                    <img src="img/logo.png" alt="" class="navbar-brand " width="100px">
+                    <h2 class="navbar-brand text-light mt-2">Art Gallery</h2>
+                    <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon">
+                            <i class="fa-solid fa-bars text-light bar"></i>
+                        </span>
+                    </button>
+                    <div class="container-fluid row collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            
+                            <li class="nav-item ml-3"><a href="#" class="nav-link text-light">Home</a></li>
+                            <li class="nav-item ml-3"><a href="#" class="nav-link text-light mr-2">Link</a></li>
+                            <div class="nav-item dropdown mt-1">
+                                <button class=" btn bg-light dropdown-toggle ml-3 px-2 py-1" data-toggle="dropdown">Category</button>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Modern Art</a>
+                                    <a href="#" class="dropdown-item">Medieval Art</a>
+                                    <a href="#" class="dropdown-item">Athor</a>
+                                </div><!-- dropdown-menu -->
+                            </div><!-- nav-item -->
+                            <li class="nav-item ml-3"><a href="#" class="nav-link text-light">About</a></li>
+                        </ul>
+                        <form action="#" class="form-inline ml-auto">
+                            <input type="text" class="form-control mr-2" placeholder="Search">
+                            <button class="btn btn-light m-2">Search</button>
+                            <button class="btn text-light m-2 lblue" data-toggle="modal" data-target="#loginpage">Login</button>
+                        </form>
+                    </div><!-- container-fluid -->
+                </nav>
+            </div><!-- container-fluid -->
             <div class="modal fade" id="loginpage">
                 <div class="modal-dialog">
                     <div class="modal-content">
